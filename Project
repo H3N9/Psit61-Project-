@@ -1,0 +1,32 @@
+import csv
+import matplotlib
+import matplotlib.pyplot as plt
+
+
+
+""" All varible """
+game_rank = {}
+
+
+
+""" """
+
+  
+def keep(varible):
+    """ keep data """
+    for i in range(2000, 2019):
+        file = csv.reader(open(r"C:\Users\GGG\Desktop\PYTHON\Project\list GOY\%s.csv" %i))
+        varible[i] = list(file)
+    for 
+
+
+
+    
+def top_rank_flag(dic):
+    """ """
+    for i, j in dic.items():
+        for k in range(10):
+            if "Action-adventure" in j[k][2] and "1" in j[k][0]:
+                print("{:>2} {:42} {}".format(j[k][0],j[k][1], j[k][2]))
+
+top_rank_flag(game_rank)
